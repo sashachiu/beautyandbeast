@@ -43,13 +43,15 @@ class ViewController: UIViewController {
 
 
     @IBAction func closerSliderControl(_ sender: UISlider) {
-        beautybelleImageView.alpha = CGFloat(sender.value)
         beautybelleImageView.frame.origin.x = CGFloat(10+188*sender.value)
-        beautybeastImageView.frame.origin.x = CGFloat(10-188*sender.value)
+        beautybeastImageView.frame.origin.x = CGFloat(254-188*sender.value)
+    
+        }
     }
     
 
 
 
-}
+
+
 
